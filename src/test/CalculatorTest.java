@@ -77,7 +77,7 @@ public class CalculatorTest {
         when(divideOperation.apply(12, 3)).thenReturn(4);
         calculator.chain(Operation.DIVIDE, 3);
         Number result = calculator.getResult();
-        assertEquals(4, result.doubleValue(), "Addition operation failed");
+        assertEquals(4, result.doubleValue(), "Division operation failed");
     }
 
     @Test
